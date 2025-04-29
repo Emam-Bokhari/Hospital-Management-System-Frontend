@@ -2,10 +2,10 @@ import Image from "next/image";
 import logo from "@/assets/Logo.png";
 import Container from "./Container";
 import NavigationLink from "./NavigationLink";
-import CustomButton from "../ui/CustomButton";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { IoMdLogIn } from "react-icons/io";
 import { CiWarning } from "react-icons/ci";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   return (
@@ -45,21 +45,24 @@ export default function Navbar() {
 
         {/* action buttons */}
         <div className="flex items-center gap-5">
-          <CustomButton>
+          <Button className="bg-[#415be7]  hover:bg-[#2f44b3] text-white cursor-pointer  focus-visible:ring-[#2f44b3]">
             <span className="flex items-center gap-2">
               Notice Board <IoNotificationsOutline className="size-5" />
             </span>
-          </CustomButton>
-          <CustomButton>
+          </Button>
+          <Button className="bg-[#415be7]  hover:bg-[#2f44b3] text-white cursor-pointer  focus-visible:ring-[#2f44b3]">
             <span className="flex items-center gap-2">
               Complaint <CiWarning className="size-5" />
             </span>
-          </CustomButton>
-          <CustomButton>
+          </Button>
+          <Button
+            variant="outline"
+            className="  cursor-pointer text-[#09090B] "
+          >
             <span className="flex items-center gap-2">
               Login <IoMdLogIn className="size-5" />
             </span>
-          </CustomButton>
+          </Button>
         </div>
       </div>
     </Container>
