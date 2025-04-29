@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Fragment } from "react";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <Fragment>
       <Button>Add</Button>
