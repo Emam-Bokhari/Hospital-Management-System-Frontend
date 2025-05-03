@@ -1,4 +1,4 @@
-import TopBar from "@/components/modules/Home/TopBar";
+import TopBar from "@/components/shared/TopBar";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import { Fragment, ReactNode } from "react";
