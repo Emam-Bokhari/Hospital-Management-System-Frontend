@@ -11,7 +11,7 @@ const notoSans = Noto_Sans({
 const notoSansClassName: string = notoSans.className;
 
 export const metadata: Metadata = {
-  title: "Dreams Care",
+  title: "Dreams Care Hospital",
   description:
     "Dreams Care Hospital is a trusted multi-specialty healthcare center offering 24/7 emergency care, online doctor appointments, patient admissions, diagnostic tests, ambulance services, and a fully stocked pharmacy. We are committed to delivering compassionate, modern, and affordable healthcare to our community.",
   keywords: [

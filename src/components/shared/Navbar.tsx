@@ -47,12 +47,12 @@ export default function Navbar() {
         <div className="flex items-center gap-5">
           <Button className="bg-[#415be7]  hover:bg-[#2f44b3] text-white cursor-pointer  focus-visible:ring-[#2f44b3]">
             <span className="flex items-center gap-2">
-              Notice Board <IoNotificationsOutline className="size-5" />
+              <IoNotificationsOutline className="size-5" /> Notice Board
             </span>
           </Button>
           <Button className="bg-[#415be7]  hover:bg-[#2f44b3] text-white cursor-pointer  focus-visible:ring-[#2f44b3]">
             <span className="flex items-center gap-2">
-              Complaint <CiWarning className="size-5" />
+              <CiWarning className="size-5" /> Complaint
             </span>
           </Button>
           <Button
@@ -60,7 +60,7 @@ export default function Navbar() {
             className="  cursor-pointer text-[#09090B] "
           >
             <span className="flex items-center gap-2">
-              Login <IoMdLogIn className="size-5" />
+              <IoMdLogIn className="size-5" /> Login
             </span>
           </Button>
         </div>
