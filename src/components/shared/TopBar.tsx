@@ -11,12 +11,12 @@ import Link from "next/link";
 
 export default function TopBar() {
   return (
-    <div className="bg-[#2f44b3] py-2">
-      <Container className="flex items-center justify-between">
+    <div className="bg-[#2f44b3] py-2 hidden md:block">
+      <Container className=" flex items-center justify-center xl:justify-between">
         {/* contact info */}
-        <div className=" flex items-center gap-5">
+        <div className=" flex flex-wrap items-center gap-5">
           {/* phone */}
-          <div className="flex items-center gap-2 text-[#f5f5f5]">
+          <div className="hidden sm:flex items-center gap-2 text-[#f5f5f5]">
             <FiPhone className="size-5" />
             <p>+1-2345-3455-33</p>
           </div>
@@ -32,7 +32,7 @@ export default function TopBar() {
           </div>
         </div>
         {/* follows on */}
-        <div className="flex items-center gap-5">
+        <div className="xl:flex hidden items-center gap-5">
           <Link href="#" className="inline-block">
             <FaFacebookF className="size-5 text-[#f5f5f5]  hover:text-[#1877F2] transition-colors" />
           </Link>

@@ -29,7 +29,7 @@ const getInTouches = [
   {
     icon: <MapPin className="size-7 text-white" />,
     label: "Location",
-    details: ["Gulshan-2, 1212", "Dhaka, Bangladesh"],
+    details: ["Gulshan-02, 1212", "Dhaka, Bangladesh"],
   },
   {
     icon: <Phone className="size-7 text-white" />,
