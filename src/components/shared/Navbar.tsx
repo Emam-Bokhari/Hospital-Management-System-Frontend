@@ -72,6 +72,33 @@ const mobileMenuItems = [
   },
 ];
 
+const navLinks = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "About Us",
+    href: "#",
+  },
+  {
+    label: "Doctors",
+    href: "#",
+  },
+  {
+    label: "Departments",
+    href: "#",
+  },
+  {
+    label: "Services",
+    href: "#",
+  },
+  {
+    label: "Contact Us",
+    href: "#",
+  },
+];
+
 export default function Navbar() {
   return (
     <Container>
@@ -83,24 +110,11 @@ export default function Navbar() {
           </div>
           {/* nav link */}
           <ul className="hidden lg:flex gap-10 ">
-            <li>
-              <NavigationLink path="/" route="Home" />
-            </li>
-            <li>
-              <NavigationLink path="/about-us" route="About Us" />
-            </li>
-            <li>
-              <NavigationLink path="/doctors" route="Doctors" />
-            </li>
-            <li>
-              <NavigationLink path="/departments" route="Departments" />
-            </li>
-            <li>
-              <NavigationLink path="/services" route="Services" />
-            </li>
-            <li>
-              <NavigationLink path="/contact-us" route="Contact Us" />
-            </li>
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                <NavigationLink path={item.href} route={item.label} />
+              </li>
+            ))}
           </ul>
         </div>
 

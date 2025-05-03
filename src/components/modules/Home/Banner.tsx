@@ -13,7 +13,7 @@ export default function Banner() {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
       <Container>
         <div className="absolute 2xl:top-[40%] xl:top-[30%] top-[35%]     z-10">
