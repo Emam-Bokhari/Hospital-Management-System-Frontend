@@ -75,17 +75,11 @@ const mobileMenuItems = [
 export default function Navbar() {
   return (
     <Container>
-      <div className="border-2 border-red-500 flex items-center justify-between">
-        <div className="flex items-center gap-10">
+      <div className=" flex items-center justify-between">
+        <div className="flex items-center gap-10 my-2">
           {/* logo */}
           <div className="relative w-[60px] h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px]">
-            <Image
-              fill
-              priority
-              src={logo}
-              alt="Dreams Care Logo"
-              className="border-2 border-blue-500"
-            />
+            <Image fill priority src={logo} alt="Dreams Care Logo" />
           </div>
           {/* nav link */}
           <ul className="hidden lg:flex gap-10 ">
