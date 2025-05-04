@@ -2,7 +2,7 @@ import Container from "@/components/shared/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CalendarCheck, Info } from "lucide-react";
+import { ArrowRight, CalendarCheck, FileText } from "lucide-react";
 import Image from "next/image";
 
 export default function DoctorSection() {
@@ -30,7 +30,7 @@ export default function DoctorSection() {
               <Card key={index}>
                 <CardTitle className="sr-only">Doctor Card</CardTitle>
                 <CardContent>
-                  <div className="relative w-25 h-25 rounded-full border-2 border-red-500 mx-auto">
+                  <div className="relative w-30 h-30 rounded-full  mx-auto">
                     <Image
                       src="https://thumbs.dreamstime.com/b/young-male-doctor-close-up-happy-looking-camera-56751540.jpg"
                       alt="Doctor"
@@ -54,7 +54,7 @@ export default function DoctorSection() {
 
                     <div className="flex justify-between">
                       <Button variant="outline" className="  cursor-pointer">
-                        <Info className="size-5" />
+                        <FileText className="size-5" />
                         Details
                       </Button>
                       <Button className="bg-[#415be7] hover:bg-[#2f44b3] text-white  cursor-pointer">
