@@ -39,7 +39,7 @@ const icons = [
   },
 ];
 
-export default function AboutUs() {
+export default function AboutUsSection() {
   return (
     <div className=" relative">
       {/* icon */}
