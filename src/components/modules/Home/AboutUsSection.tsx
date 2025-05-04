@@ -58,7 +58,7 @@ export default function AboutUsSection() {
           </div>
         ))}
       </div>
-      <Container className="my-20">
+      <Container className="my-24">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 ">
           {/* image */}
 

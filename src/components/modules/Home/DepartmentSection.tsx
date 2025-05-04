@@ -52,7 +52,7 @@ const departmentIcons = [
 export default function DepartmentSection() {
   return (
     <div>
-      <Container className="my-20">
+      <Container className="my-24">
         {/* heading and action button */}
         <div className="flex justify-between items-center ">
           <h2 className="text-3xl md:text-4xl text-[#09090B] font-bold">
@@ -65,7 +65,7 @@ export default function DepartmentSection() {
         </div>
         {/* card */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6  gap-5 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6  gap-5 mt-6">
           {departmentIcons.map((departmentIcon) => (
             <Link href="#" key={departmentIcon.label}>
               <div
@@ -80,7 +80,7 @@ export default function DepartmentSection() {
                       priority
                     />
                   </div>
-                  <p className="text-[#09090B] text-base md:text-lg font-medium mt-3">
+                  <p className="text-[#09090B] text-xl font-medium mt-3">
                     {departmentIcon.label}
                   </p>
                 </div>

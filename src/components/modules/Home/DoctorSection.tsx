@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function DoctorSection() {
   return (
     <div>
-      <Container className="my-20">
+      <Container className="my-24">
         <div className="space-y-6">
           <div className="flex justify-between items-center">
             <div className="space-y-6">
@@ -47,10 +47,12 @@ export default function DoctorSection() {
                     <Badge className="bg-blue-100 text-[#415be7] text-sm font-bold">
                       Cardiologist
                     </Badge>
-                    <p className="text-zinc-900 text-base">
+                    <p className="text-zinc-900 text-base md:text-lg">
                       MBBS, FCPS (Cardiology)
                     </p>
-                    <p className="text-zinc-900 text-base">Mon–Thu, 10AM–1PM</p>
+                    <p className="text-zinc-900 text-base md:text-lg">
+                      Mon–Thu, 10AM–1PM
+                    </p>
 
                     <div className="flex justify-between">
                       <Button variant="outline" className="  cursor-pointer">

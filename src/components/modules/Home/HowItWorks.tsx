@@ -5,47 +5,45 @@ import { Fragment } from "react";
 const workingProcessSteps = [
   {
     src: "https://res.cloudinary.com/dvpqm6zct/image/upload/v1746364535/pexels-tima-miroshnichenko-8376233_cwxcp3.jpg",
-    title: " Select Expert Doctor",
+    title: "Choose the Right Doctor",
     description:
-      "Explore expert doctors, read reviews, and choose the right specialist for your needs",
+      "Browse profiles, read reviews, and select the ideal doctor for your needs",
     badgeClassName: "bg-blue-500",
     badgeNumber: "01",
   },
   {
     src: "https://res.cloudinary.com/dvpqm6zct/image/upload/v1746367052/pexels-pavel-danilyuk-6809668_tnkalz.jpg",
-    title: "Make Appointment",
+    title: "Book Your Appointment",
     description:
-      "Choose your preferred time slot and book your appointment instantly",
+      "Select a convenient time and book your appointment in just a few clicks",
     badgeClassName: "bg-green-500",
     badgeNumber: "02",
   },
   {
     src: "https://res.cloudinary.com/dvpqm6zct/image/upload/v1746367565/pexels-alex-green-5699431_kgouxo.jpg",
-    title: "Get Consultants",
+    title: "Consult with Specialists",
     description:
-      "Connect with experienced consultants for personalized medical advice and guidance",
+      "Connect with experienced specialists for expert medical guidance",
     badgeClassName: "bg-yellow-500",
     badgeNumber: "03",
   },
   {
     src: "https://res.cloudinary.com/dvpqm6zct/image/upload/v1746367050/pexels-karolina-grabowska-5207015_fw0g3b.jpg",
-    title: "Get Care & Relief",
+    title: "Receive Care and Support",
     description:
-      "Start your recovery journey with trusted treatment and supportive care",
+      "Begin your treatment journey with trusted care and ongoing support",
     badgeClassName: "bg-red-500",
     badgeNumber: "04",
   },
 ];
 
-export default function WorkingProcess() {
+export default function HowItWorks() {
   return (
     <Fragment>
       <div>
-        <Container className="my-20">
+        <Container className="my-24">
           <div className="space-y-6">
-            <h2 className="text-[#415be7] font-bold text-xl">
-              Working Process
-            </h2>
+            <h2 className="text-[#415be7] font-bold text-xl">How It Works</h2>
 
             <p className="text-3xl md:text-4xl text-[#09090B] font-bold">
               A Clear Path to <br />
