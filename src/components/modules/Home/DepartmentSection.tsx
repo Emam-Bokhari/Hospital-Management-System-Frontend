@@ -8,6 +8,7 @@ import neurology from "@/assets/department-icons/neurology.png";
 import dentistry from "@/assets/department-icons/dentistry.png";
 import psychiatry from "@/assets/department-icons/psychiatry.png";
 import gastroenterology from "@/assets/department-icons/gastroenterology.png";
+import Link from "next/link";
 
 const departmentIcons = [
   {
@@ -63,26 +64,28 @@ export default function DepartmentSection() {
           </Button>
         </div>
         {/* card */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6  gap-5 mt-6">
           {departmentIcons.map((departmentIcon) => (
-            <div
-              key={departmentIcon.label}
-              className={`${departmentIcon.className} w-full  h-44  flex items-center justify-center rounded-lg`}
-            >
-              <div className="text-center">
-                <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-15 md:h-15 mx-auto">
-                  <Image
-                    src={departmentIcon.src}
-                    alt={departmentIcon.alt}
-                    fill
-                    priority
-                  />
+            <Link href="#" key={departmentIcon.label}>
+              <div
+                className={`${departmentIcon.className} w-full  h-44  flex items-center justify-center rounded-lg transform transition duration-200 hover:scale-105`}
+              >
+                <div className="text-center">
+                  <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-15 md:h-15 mx-auto">
+                    <Image
+                      src={departmentIcon.src}
+                      alt={departmentIcon.alt}
+                      fill
+                      priority
+                    />
+                  </div>
+                  <p className="text-[#09090B] text-base md:text-lg font-medium mt-3">
+                    {departmentIcon.label}
+                  </p>
                 </div>
-                <p className="text-[#09090B] text-sm sm:text-base md:text-lg font-medium mt-3">
-                  {departmentIcon.label}
-                </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </Container>

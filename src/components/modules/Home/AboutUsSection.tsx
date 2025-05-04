@@ -75,6 +75,7 @@ export default function AboutUsSection() {
           {/* text */}
           <div className="space-y-6 ">
             <h2 className="text-[#415be7] font-bold text-xl">About Us</h2>
+
             <p className="text-3xl md:text-4xl text-[#09090B] font-bold">
               Built on Trust <br />
               Guided by Care
