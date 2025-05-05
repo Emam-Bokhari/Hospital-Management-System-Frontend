@@ -1,11 +1,13 @@
 import AboutUsSection from "@/components/modules/Home/AboutUsSection";
 import Banner from "@/components/modules/Home/Banner";
-import DepartmentSection from "@/components/modules/Home/DepartmentSection";
+
 import DoctorSection from "@/components/modules/Home/DoctorSection";
 import OurServicesSection from "@/components/modules/Home/OurServicesSection";
 import HowItWorks from "@/components/modules/Home/HowItWorks";
 import { Fragment } from "react";
 import WhyChooseUsSection from "@/components/modules/Home/WhyChooseUsSection";
+import SpecializationSection from "@/components/modules/Home/SpecializationSection";
+import TestimonialSection from "@/components/modules/Home/TestimonialSection";
 
 export default function HomePage() {
   return (
@@ -13,10 +15,11 @@ export default function HomePage() {
       <Banner />
       <AboutUsSection />
       <OurServicesSection />
-      <DepartmentSection />
+      <SpecializationSection />
       <DoctorSection />
       <HowItWorks />
       <WhyChooseUsSection />
+      <TestimonialSection />
     </Fragment>
   );
 }

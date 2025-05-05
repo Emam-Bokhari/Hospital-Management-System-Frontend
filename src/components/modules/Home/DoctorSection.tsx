@@ -2,7 +2,7 @@ import Container from "@/components/shared/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CalendarCheck, FileText } from "lucide-react";
+import { ArrowRight, CalendarCheck, Eye } from "lucide-react";
 import Image from "next/image";
 
 export default function DoctorSection() {
@@ -56,7 +56,7 @@ export default function DoctorSection() {
 
                     <div className="flex justify-between">
                       <Button variant="outline" className="  cursor-pointer">
-                        <FileText className="size-5" />
+                        <Eye className="size-5" />
                         Details
                       </Button>
                       <Button className="bg-[#415be7] hover:bg-[#2f44b3] text-white  cursor-pointer">
