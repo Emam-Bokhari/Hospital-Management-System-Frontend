@@ -5,6 +5,7 @@ import DoctorSection from "@/components/modules/Home/DoctorSection";
 import OurServicesSection from "@/components/modules/Home/OurServicesSection";
 import HowItWorks from "@/components/modules/Home/HowItWorks";
 import { Fragment } from "react";
+import WhyChooseUsSection from "@/components/modules/Home/WhyChooseUsSection";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <DepartmentSection />
       <DoctorSection />
       <HowItWorks />
+      <WhyChooseUsSection />
     </Fragment>
   );
 }
