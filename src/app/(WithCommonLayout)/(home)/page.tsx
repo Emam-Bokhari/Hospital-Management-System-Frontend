@@ -10,6 +10,7 @@ import SpecializationSection from "@/components/modules/Home/SpecializationSecti
 import TestimonialSection from "@/components/modules/Home/TestimonialSection";
 import BlogSection from "@/components/modules/Home/BlogSection";
 import FaqSection from "@/components/modules/Home/FaqSection";
+import ScrollToTop from "@/components/modules/Home/ScrollToTop";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
       <TestimonialSection />
       <BlogSection />
       <FaqSection />
+      <ScrollToTop />
     </Fragment>
   );
 }
