@@ -9,6 +9,7 @@ import WhyChooseUsSection from "@/components/modules/Home/WhyChooseUsSection";
 import SpecializationSection from "@/components/modules/Home/SpecializationSection";
 import TestimonialSection from "@/components/modules/Home/TestimonialSection";
 import BlogSection from "@/components/modules/Home/BlogSection";
+import FaqSection from "@/components/modules/Home/FaqSection";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <WhyChooseUsSection />
       <TestimonialSection />
       <BlogSection />
+      <FaqSection />
     </Fragment>
   );
 }

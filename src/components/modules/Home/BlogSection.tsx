@@ -11,7 +11,7 @@ import { MdOutlineCalendarToday } from "react-icons/md";
 export default function BlogSection() {
   return (
     <div>
-      <Container className="my-20">
+      <Container className="my-24">
         <div className="space-y-6">
           <div className="flex justify-between items-center">
             <div className="space-y-6">
