@@ -46,6 +46,27 @@ const testimonials = [
     feedback:
       "Warm and welcoming environment with skilled professionals. I’d trust them again without hesitation.",
   },
+  {
+    id: 7,
+    src: "https://thumbs.dreamstime.com/b/young-male-doctor-close-up-happy-looking-camera-56751540.jpg",
+    userName: "Dr. Nusrat Jahan",
+    feedback:
+      "A truly patient-centered experience. The communication  I felt genuinely cared for. care exceeded my expectations. care exceeded my expectations.",
+  },
+  {
+    id: 8,
+    src: "https://thumbs.dreamstime.com/b/young-male-doctor-close-up-happy-looking-camera-56751540.jpg",
+    userName: "Tanvir Ahmed",
+    feedback:
+      "They listened carefully and offered thoughtful guidance throughout my treatment guidance throughout my treatment. guidance throughout my treatment. ",
+  },
+  {
+    id: 9,
+    src: "https://thumbs.dreamstime.com/b/young-male-doctor-close-up-happy-looking-camera-56751540.jpg",
+    userName: "Faria Rahman",
+    feedback:
+      "Warm and welcoming environment with skilled professionals. I’d trust them again without hesitation.",
+  },
 ];
 
 const breakpointColumnsObj = {
