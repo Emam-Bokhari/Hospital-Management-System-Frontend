@@ -26,6 +26,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import Link from "next/link";
 
 const mobileMenuItems = [
   {
@@ -130,14 +131,16 @@ export default function Navbar() {
               <CiWarning className="size-5" /> Complaint
             </span>
           </Button>
-          <Button
-            variant="outline"
-            className="  cursor-pointer text-[#09090B] "
-          >
-            <span className="flex items-center gap-2">
-              <IoMdLogIn className="size-5" /> Login
-            </span>
-          </Button>
+          <Link href="/login" className="block">
+            <Button
+              variant="outline"
+              className="  cursor-pointer text-[#09090B] "
+            >
+              <span className="flex items-center gap-2">
+                <IoMdLogIn className="size-5" /> Login
+              </span>
+            </Button>
+          </Link>
         </div>
         {/* mobile view nav link */}
         <div className="block xl:hidden">
@@ -153,14 +156,16 @@ export default function Navbar() {
               {mobileMenuItems.map((item) => (
                 <DropdownMenuItem
                   key={item.label}
-                  className="group data-[highlighted]:bg-blue-100 data-[highlighted]:text-[#415be7] focus:bg-blue-100 focus:text-[#415be7]"
+                  className="group data-[highlighted]:bg-blue-100 data-[highlighted]:text-[#415be7] focus:bg-blue-100 focus:text-[#415be7] block lg:hidden"
                 >
-                  {item.icon}
-                  <span className="text-[#09090B]">{item.label}</span>
+                  <div className="flex gap-3 items-center">
+                    {item.icon}
+                    <span className="text-[#09090B]">{item.label}</span>
+                  </div>
                 </DropdownMenuItem>
               ))}
 
-              <DropdownMenuSeparator />
+              <DropdownMenuSeparator className="block lg:hidden" />
               <DropdownMenuItem className="group data-[highlighted]:bg-blue-100 data-[highlighted]:text-[#415be7] focus:bg-blue-100 focus:text-[#415be7] text-[#09090B]">
                 <FiBell className="mr-2 group-data-[highlighted]:text-[#415be7] group-focus:text-[#415be7] text-[#09090B]" />
                 Notice
@@ -171,8 +176,10 @@ export default function Navbar() {
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem className="group data-[highlighted]:bg-blue-100 data-[highlighted]:text-[#415be7] focus:bg-blue-100 focus:text-[#415be7] text-[#09090B]">
-                <FiLogIn className="mr-2 group-data-[highlighted]:text-[#415be7] group-focus:text-[#415be7] text-[#09090B]" />
-                LogIn
+                <Link href="/login" className="flex items-center gap-2">
+                  <FiLogIn className="mr-2 group-data-[highlighted]:text-[#415be7] group-focus:text-[#415be7] text-[#09090B]" />
+                  LogIn
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
